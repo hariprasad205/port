@@ -16,6 +16,663 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://github.com/hari-prasad-dev">
   
+  <!-- Links -->q
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Scroll Progress Bar -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- Background Animated Blobs -->
+  <div class="bg-blobs">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+  </div>
+  
+  <!-- Overlay grid structure -->
+  <div class="bg-grid-overlay"></div>
+
+  <!-- Navigation Header -->
+  <header>
+    <nav class="nav-container glass">
+      <a href="#home" class="logo" id="logoLink">
+        <span class="logo-icon"></span>
+        Hari<span>Prasad</span>
+      </a>
+      
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-item active">Home</a></li>
+        <li><a href="#about" class="nav-item">About & Academics</a></li>
+        <li><a href="#skills" class="nav-item">Skills</a></li>
+        <li><a href="#projects" class="nav-item">Projects</a></li>
+        <li><a href="#contact" class="nav-item">Contact</a></li>
+      </ul>
+      
+      <div class="nav-right">
+        <!-- Light/Dark Mode Switcher -->
+        <button class="theme-toggle-btn" id="themeToggle" aria-label="Toggle Theme">
+          <svg class="moon-icon" viewBox="0 0 24 24">
+            <path d="M12 3c.132 0 .263 0 .393.007a7.5 7.5 0 0 0 7.92 12.446A9 9 0 1 1 12 3z"/>
+          </svg>
+          <svg class="sun-icon" viewBox="0 0 24 24">
+            <path d="M12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm0-7a1 1 0 0 1 1 1v2a1 1 0 1 1-2 0V3a1 1 0 0 1 1-1zm0 15a1 1 0 0 1 1 1v2a1 1 0 1 1-2 0v-2a1 1 0 0 1 1-1zM5.636 4.222a1 1 0 0 1 1.414 0l1.414 1.414a1 1 0 1 1-1.414 1.414L5.636 5.636a1 1 0 0 1 0-1.414zm11.314 11.314a1 1 0 0 1 1.414 0l1.414 1.414a1 1 0 1 1-1.414 1.414l-1.414-1.414a1 1 0 0 1 0-1.414zM3 11a1 1 0 1 1 0 2H1a1 1 0 1 1 0-2h2zm19 0a1 1 0 1 1 0 2h-2a1 1 0 1 1 0-2h2zM5.636 19.778a1 1 0 0 1 0-1.414l1.414-1.414a1 1 0 1 1 1.414 1.414l-1.414 1.414a1 1 0 0 1-1.414 0zm11.314-11.314a1 1 0 0 1 0-1.414l1.414-1.414a1 1 0 1 1 1.414 1.414l-1.414 1.414a1 1 0 0 1-1.414 0z"/>
+          </svg>
+        </button>
+        
+        <!-- Action Button -->
+        <a href="#contact" class="nav-cta">
+          Contact Me
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </a>
+        
+        <!-- Mobile menu toggler -->
+        <button class="mobile-menu-toggle" id="menuToggle" aria-label="Toggle Mobile Menu">
+          <svg viewBox="0 0 24 24" width="28" height="28" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12" id="line1"></line>
+            <line x1="3" y1="6" x2="21" y2="6" id="line2"></line>
+            <line x1="3" y1="18" x2="21" y2="18" id="line3"></line>
+          </svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-grid">
+      <div class="hero-content">
+        <div class="hero-badge reveal-element" id="heroBadge">
+          <span class="hero-badge-dot"></span>
+          BCA 4th Semester Student
+        </div>
+        <h1 class="hero-title reveal-element" id="heroTitle">
+          Hi, I am <br><span class="name">Hari Prasad</span>
+        </h1>
+        <div class="hero-subtitle reveal-element" id="heroSubtitle">
+          Building <span id="dynamicText">Modern Software Solutions</span><span class="typing-cursor">|</span>
+        </div>
+        <p class="hero-desc reveal-element" id="heroDesc">
+          Computer Applications student at <strong>Akash Global College</strong> under <strong>Bengaluru City University</strong>. Passionate about software systems, front-end design systems, relational databases, and crafting fluid interactive web layouts.
+        </p>
+        <div class="hero-ctas reveal-element" id="heroCtas">
+          <a href="#projects" class="btn btn-primary">
+            Explore My Projects
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="3" width="7" height="9"></rect>
+              <rect x="14" y="3" width="7" height="5"></rect>
+              <rect x="14" y="12" width="7" height="9"></rect>
+              <rect x="3" y="16" width="7" height="5"></rect>
+            </svg>
+          </a>
+          <a href="#about" class="btn btn-secondary">
+            About Me
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+              <circle cx="12" cy="7" r="4"></circle>
+            </svg>
+          </a>
+        </div>
+      </div>
+      
+      <!-- Visual Elements & Orbit Mockup -->
+      <div class="hero-visual reveal-element" id="heroVisual">
+        <div class="visual-orbit orbit-1"></div>
+        <div class="visual-orbit orbit-2"></div>
+        <div class="visual-container">
+          <img class="visual-avatar" src="assets/avatar.png" alt="Hari Prasad Profile Avatar">
+        </div>
+        
+        <!-- Floating Visual Widgets -->
+        <div class="floating-card fc-1 glass">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#06b6d4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="16 18 22 12 16 6"></polyline>
+            <polyline points="8 6 2 12 8 18"></polyline>
+          </svg>
+          <span>HTML / CSS / JS</span>
+        </div>
+        <div class="floating-card fc-2 glass">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#a855f7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+            <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+            <path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3"></path>
+          </svg>
+          <span>MySQL / DBMS</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Terminal Simulator Component -->
+  <div class="terminal-wrapper reveal-element" id="terminalSection">
+    <div class="terminal-container">
+      <div class="terminal-header">
+        <div class="terminal-buttons">
+          <span class="t-btn t-close"></span>
+          <span class="t-btn t-minimize"></span>
+          <span class="t-btn t-maximize"></span>
+        </div>
+        <div class="terminal-title">hari-prasad ~ bca-terminal</div>
+        <div class="terminal-status">
+          <span class="hero-badge-dot" style="background:#10b981; box-shadow:0 0 8px #10b981;"></span>
+          online
+        </div>
+      </div>
+      <div class="terminal-body" id="terminalBody">
+        <div class="terminal-line">
+          Welcome to Hari Prasad's CLI Portal. [Version 2.0.4]
+        </div>
+        <div class="terminal-line">
+          Type <span style="color: var(--accent); font-weight:600;">help</span> to see a list of available commands.
+        </div>
+        <div class="terminal-input-line">
+          <span class="terminal-prompt-text">guest@hari-prasad ~ %</span>
+          <input type="text" class="terminal-input" id="terminalInput" autocomplete="off" autofocus placeholder="Type a command...">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- About & Academics Section -->
+  <section id="about">
+    <div class="section-header reveal-element">
+      <span class="section-tag">Academic Journey</span>
+      <h2 class="section-title">About Me & <span>Academics</span></h2>
+      <p class="section-desc">A deep dive into my educational foundation, course subjects, and academic accomplishments under Bengaluru City University.</p>
+    </div>
+    
+    <div class="about-grid">
+      <!-- Details and timeline -->
+      <div class="about-details reveal-element">
+        <div class="timeline-content glass" style="margin-bottom: 24px;">
+          <h3 class="timeline-title" style="margin-bottom: 12px; color: var(--primary);">Developing My Craft</h3>
+          <p class="about-text">
+            I am currently in my <strong>4th Semester</strong> of studying Bachelor of Computer Applications (BCA) at <strong>Akash Global College</strong>, affiliated with <strong>Bengaluru City University (BCU)</strong>.
+          </p>
+          <br>
+          <p class="about-text">
+            My curriculum covers core aspects of computer science, including object-oriented programming, logical system design, algorithms, web technologies, and relational databases. I combine classroom theory with hands-on building, building a well-rounded foundation in software development.
+          </p>
+        </div>
+        
+        <!-- Stepper timeline for academic stages -->
+        <div class="education-timeline">
+          <div class="timeline-item">
+            <span class="timeline-dot"></span>
+            <div class="timeline-content glass">
+              <div class="timeline-header-info">
+                <h4 class="timeline-title">BCA (Bachelor of Computer Applications)</h4>
+                <span class="timeline-date">2024 - Present</span>
+              </div>
+              <div class="timeline-institution">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"/></svg>
+                Akash Global College | BCU
+              </div>
+              <p class="timeline-desc" style="margin-top: 10px;">
+                Focusing on building advanced competencies in programming architectures (Java), database engineering (SQL), web applications development, and networking principles. Currently maintaining an outstanding SGPA.
+              </p>
+            </div>
+          </div>
+          
+          <div class="timeline-item">
+            <span class="timeline-dot"></span>
+            <div class="timeline-content glass">
+              <div class="timeline-header-info">
+                <h4 class="timeline-title">Pre-University Course (PUC)</h4>
+                <span class="timeline-date">Completed 2024</span>
+              </div>
+              <div class="timeline-institution">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                Department of Pre-University Education
+              </div>
+              <p class="timeline-desc" style="margin-top: 10px;">
+                Specialized in Computer Science disciplines, establishing fundamental concepts in programming basics, digital electronics, logic systems, and office configurations.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Interactive GPA Calculator Card -->
+      <div class="gpa-calculator glass reveal-element">
+        <div class="gpa-header">
+          <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+          </svg>
+          <div class="gpa-title">BCU BCA SGPA Calculator</div>
+        </div>
+        <p class="timeline-desc" style="margin-bottom: 20px;">
+          Dynamic GPA evaluator custom-calibrated to the grading scheme. Set your score grades below to estimate semester metrics!
+        </p>
+        
+        <div class="gpa-grid">
+          <div class="gpa-inputs" id="gpaInputsContainer">
+            <!-- Dynamic rows will be managed by JS for better scalability -->
+            <div class="gpa-row">
+              <span class="gpa-label">Java Programming</span>
+              <select class="gpa-select grade-selector" data-credits="4">
+                <option value="10">O (Outstanding)</option>
+                <option value="9" selected>A++ (Excellent)</option>
+                <option value="8">A+ (Very Good)</option>
+                <option value="7">A (Good)</option>
+                <option value="6">B+ (Above Average)</option>
+                <option value="5">B (Pass)</option>
+                <option value="0">F (Fail)</option>
+              </select>
+              <span class="timeline-date" style="text-align:center;">4 Credits</span>
+            </div>
+            
+            <div class="gpa-row">
+              <span class="gpa-label">DBMS (SQL)</span>
+              <select class="gpa-select grade-selector" data-credits="4">
+                <option value="10" selected>O (Outstanding)</option>
+                <option value="9">A++ (Excellent)</option>
+                <option value="8">A+ (Very Good)</option>
+                <option value="7">A (Good)</option>
+                <option value="6">B+ (Above Average)</option>
+                <option value="5">B (Pass)</option>
+                <option value="0">F (Fail)</option>
+              </select>
+              <span class="timeline-date" style="text-align:center;">4 Credits</span>
+            </div>
+
+            <div class="gpa-row">
+              <span class="gpa-label">Operating Systems</span>
+              <select class="gpa-select grade-selector" data-credits="3">
+                <option value="10">O (Outstanding)</option>
+                <option value="9">A++ (Excellent)</option>
+                <option value="8" selected>A+ (Very Good)</option>
+                <option value="7">A (Good)</option>
+                <option value="6">B+ (Above Average)</option>
+                <option value="5">B (Pass)</option>
+                <option value="0">F (Fail)</option>
+              </select>
+              <span class="timeline-date" style="text-align:center;">3 Credits</span>
+            </div>
+
+            <div class="gpa-row">
+              <span class="gpa-label">Web Technologies</span>
+              <select class="gpa-select grade-selector" data-credits="3">
+                <option value="10" selected>O (Outstanding)</option>
+                <option value="9">A++ (Excellent)</option>
+                <option value="8">A+ (Very Good)</option>
+                <option value="7">A (Good)</option>
+                <option value="6">B+ (Above Average)</option>
+                <option value="5">B (Pass)</option>
+                <option value="0">F (Fail)</option>
+              </select>
+              <span class="timeline-date" style="text-align:center;">3 Credits</span>
+            </div>
+
+            <div class="gpa-row">
+              <span class="gpa-label">Practical Labs</span>
+              <select class="gpa-select grade-selector" data-credits="4">
+                <option value="10" selected>O (Outstanding)</option>
+                <option value="9">A++ (Excellent)</option>
+                <option value="8">A+ (Very Good)</option>
+                <option value="7">A (Good)</option>
+                <option value="6">B+ (Above Average)</option>
+                <option value="5">B (Pass)</option>
+                <option value="0">F (Fail)</option>
+              </select>
+              <span class="timeline-date" style="text-align:center;">4 Credits</span>
+            </div>
+          </div>
+          
+          <div class="gpa-result-card">
+            <div class="gpa-dial">
+              <svg class="gpa-svg">
+                <defs>
+                  <linearGradient id="gpa-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#6366f1" />
+                    <stop offset="100%" stop-color="#06b6d4" />
+                  </linearGradient>
+                </defs>
+                <circle class="gpa-circle-bg" cx="70" cy="70" r="60"></circle>
+                <circle class="gpa-circle-value" id="gpaCircle" cx="70" cy="70" r="60"></circle>
+              </svg>
+              <div class="gpa-value-text" id="gpaText">9.35</div>
+            </div>
+            <div class="gpa-class" id="gpaClassText">Outstanding (O)</div>
+            <span class="timeline-date" style="margin-top: 14px;">Estimated SGPA</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technical Skills Section -->
+  <section id="skills">
+    <div class="section-header reveal-element">
+      <span class="section-tag">Core Capabilities</span>
+      <h2 class="section-title">Technical <span>Superpowers</span></h2>
+      <p class="section-desc">My technical abilities and toolkits, structured across core engineering domains.</p>
+    </div>
+    
+    <div class="skills-grid">
+      <!-- Category 1: Frontend -->
+      <div class="skills-category glass reveal-element">
+        <div class="skills-category-header">
+          <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+          </svg>
+          <h3 class="skills-category-title">Frontend Engineering</h3>
+        </div>
+        <div class="skills-list">
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">HTML5 / Semantic Layouts</span>
+              <span class="skill-percent">90%</span>
+            </div>
+            <div class="skill-bar-container">
+              <div class="skill-bar-fill" style="width: 90%;"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">CSS3 / Flexbox / Grid</span>
+              <span class="skill-percent">85%</span>
+            </div>
+            <div class="skill-bar-container">
+              <div class="skill-bar-fill" style="width: 85%;"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">Vanilla JavaScript (ES6+)</span>
+              <span class="skill-percent">80%</span>
+            </div>
+            <div class="skill-bar-container">
+              <div class="skill-bar-fill" style="width: 80%;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Category 2: Backend & Systems -->
+      <div class="skills-category glass reveal-element">
+        <div class="skills-category-header">
+          <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01" />
+          </svg>
+          <h3 class="skills-category-title">Backend & Programming</h3>
+        </div>
+        <div class="skills-list">
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">Java Programming (OOP)</span>
+              <span class="skill-percent">78%</span>
+            </div>
+            <div class="skill-bar-container">
+              <div class="skill-bar-fill" style="width: 78%;"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">Data Structures (DSA)</span>
+              <span class="skill-percent">70%</span>
+            </div>
+            <div class="skill-bar-container">
+              <div class="skill-bar-fill" style="width: 70%;"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">Node.js (Express)</span>
+              <span class="skill-percent">65%</span>
+            </div>
+            <div class="skill-bar-container">
+              <div class="skill-bar-fill" style="width: 65%;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Category 3: Databases & Tools -->
+      <div class="skills-category glass reveal-element">
+        <div class="skills-category-header">
+          <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 7v10c0 2.21 3.58 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.58 4 8 4s8-1.79 8-4M4 7c0-2.21 3.58-4 8-4s8 1.79 8 4m0 5c0 2.21-3.58 4-8 4s-8-1.79-8-4" />
+          </svg>
+          <h3 class="skills-category-title">Databases & Utilities</h3>
+        </div>
+        <div class="skills-list">
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">MySQL / Relational Queries</span>
+              <span class="skill-percent">82%</span>
+            </div>
+            <div class="skill-bar-container">
+              <div class="skill-bar-fill" style="width: 82%;"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">Git & GitHub Version Control</span>
+              <span class="skill-percent">85%</span>
+            </div>
+            <div class="skill-bar-container">
+              <div class="skill-bar-fill" style="width: 85%;"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">VS Code / Dev Tools</span>
+              <span class="skill-percent">90%</span>
+            </div>
+            <div class="skill-bar-container">
+              <div class="skill-bar-fill" style="width: 90%;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="section-header reveal-element">
+      <span class="section-tag">Showcase Hub</span>
+      <h2 class="section-title">Featured <span>Creations</span></h2>
+      <p class="section-desc">A curated selection of academic, utility, and modern web application projects built during my BCA journey.</p>
+    </div>
+    
+    <!-- Filter tabs -->
+    <div class="projects-filter-bar reveal-element">
+      <button class="filter-btn active" data-filter="all">All Projects</button>
+      <button class="filter-btn" data-filter="web">Web Apps</button>
+      <button class="filter-btn" data-filter="systems">Systems/DBMS</button>
+      <button class="filter-btn" data-filter="utils">Utilities</button>
+    </div>
+    
+    <div class="projects-grid">
+      <!-- Project 1 -->
+      <div class="project-card glass reveal-element" data-category="systems">
+        <div class="project-visual">
+          <span class="project-card-badge">DBMS</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+          </svg>
+        </div>
+        <div class="project-details">
+          <h3 class="project-title">Campus Library Manager</h3>
+          <p class="project-desc">A core DBMS project designed for managing campus library catalogs, tracking book issues/returns, cataloging inventory, and computing late fees. Features high-performance nested SQL queries.</p>
+          <div class="project-tags">
+            <span class="project-tag">Java</span>
+            <span class="project-tag">MySQL</span>
+            <span class="project-tag">JDBC</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/hari-prasad-dev" class="project-link" target="_blank">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+              Repository
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Project 2 -->
+      <div class="project-card glass reveal-element" data-category="web">
+        <div class="project-visual">
+          <span class="project-card-badge">Frontend</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"></circle>
+            <line x1="2" y1="12" x2="22" y2="12"></line>
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+          </svg>
+        </div>
+        <div class="project-details">
+          <h3 class="project-title">BCU Syllabus Hub</h3>
+          <p class="project-desc">A modern single-page visual roadmap displaying syllabi, semester timelines, recommended books, and past exam question grids specifically for BCU's BCA students.</p>
+          <div class="project-tags">
+            <span class="project-tag">HTML5</span>
+            <span class="project-tag">Vanilla CSS</span>
+            <span class="project-tag">JavaScript</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/hari-prasad-dev" class="project-link" target="_blank">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+              Repository
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Project 3 -->
+      <div class="project-card glass reveal-element" data-category="utils">
+        <div class="project-visual">
+          <span class="project-card-badge">Data Tools</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+          </svg>
+        </div>
+        <div class="project-details">
+          <h3 class="project-title">Smart Expense Tracker</h3>
+          <p class="project-desc">A core utility designed to record daily expenses, group expenditures into beautiful color-coded categories, and analyze budget limits using local browser storage.</p>
+          <div class="project-tags">
+            <span class="project-tag">JavaScript</span>
+            <span class="project-tag">Chart.js</span>
+            <span class="project-tag">LocalStore</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/hari-prasad-dev" class="project-link" target="_blank">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+              Repository
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="section-header reveal-element">
+      <span class="section-tag">Get In Touch</span>
+      <h2 class="section-title">Let's Build <span>Together</span></h2>
+      <p class="section-desc">Have an interesting project, collaboration opportunity, or just want to chat about academic ideas? Feel free to drop a message!</p>
+    </div>
+    
+    <div class="contact-grid">
+      <!-- Contact Cards & Info -->
+      <div class="contact-info reveal-element">
+        <div class="contact-cards-container">
+
+          
+          <div class="contact-info-card glass">
+            <div class="contact-info-icon-wrapper">
+              <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg>
+            </div>
+            <div class="contact-info-details">
+              <span class="contact-info-label">Location</span>
+              <span class="contact-info-val">Bengaluru, Karnataka, India</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Social Networks Connect -->
+        <div class="contact-social-section">
+          <span class="contact-social-title">Connect on Social Networks</span>
+          <div class="social-links">
+            <a href="https://github.com/hari-prasad-dev" class="social-btn gh glass" target="_blank" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/hari-prasad-dev/" class="social-btn li glass" target="_blank" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"></path><circle cx="4" cy="4" r="2"></circle></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Interactive Contact Form -->
+      <div class="contact-form-card glass reveal-element">
+        <h3 class="form-title">Send a Quick Message</h3>
+        <form class="form-grid" id="contactForm" onsubmit="return false;">
+          <div class="form-group">
+            <input type="text" id="formName" class="form-input" placeholder=" " required>
+            <label for="formName" class="form-label">Full Name</label>
+          </div>
+          <div class="form-group">
+            <input type="email" id="formEmail" class="form-input" placeholder=" " required>
+            <label for="formEmail" class="form-label">Email Address</label>
+          </div>
+          <div class="form-group">
+            <textarea id="formMessage" class="form-textarea" placeholder=" " required></textarea>
+            <label for="formMessage" class="form-label">Message Content</label>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width: 100%; border: none;">
+            Send Message
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="22" y1="2" x2="11" y2="13"></line>
+              <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+            </svg>
+          </button>
+          <div class="form-status-msg" id="formStatus">Sending message...</div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-text">
+        &copy; 2026 Hari Prasad. Built with pure HTML, CSS, and JS.
+      </div>
+      <div class="footer-credits">
+        Akash Global College | Bengaluru City University
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hari Prasad | BCA Portfolio & Developer Hub</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Portfolio of Hari Prasad, a passionate BCA student at Akash Global College under Bengaluru City University. Exploring web development, system architecture, database design, and software engineering.">
+  <meta name="keywords" content="Hari Prasad, BCA, Akash Global College, Bengaluru City University, Web Developer Portfolio, Bengaluru Student Developer, Software Engineer Portfolio">
+  <meta name="author" content="Hari Prasad">
+  
+  <!-- OpenGraph Card Meta Tags -->
+  <meta property="og:title" content="Hari Prasad | BCA Portfolio & Developer Hub">
+  <meta property="og:description" content="Explore my projects, dynamic GPA calculator, skills grid, and interactive command terminal.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://github.com/hari-prasad-dev">
+  
   <!-- Links -->
   <link rel="stylesheet" href="css/style.css">
 </head>
